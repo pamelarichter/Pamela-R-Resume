@@ -1,0 +1,46 @@
+
+.header {
+    grid-area: header;
+}
+
+  .sidebar {
+    gride-area: sidebar;
+  }
+a {
+  font-family: 'Pacifico', cursive;
+  text-decoration: none;
+  color: purple
+}
+.link:hover{
+  background: yellow;
+  text-decoration: underline;
+}
+
+.work {
+  grid-area:work
+}
+
+  .myimg{
+    float:right;
+    }
+
+  strong {
+      color:purple;
+    font-family: 'Abril Fatface', cursive;
+    }
+
+
+.container {
+  max-width: 1080px;
+margin: auto;
+    display: grid;
+    /* grid-template-columns: 20px auto 200px */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    /* grid-template-rows: repeat(3, 200px); */
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+
+    grid-template-areas:
+    "header header header"
+    "work work sidebar"
